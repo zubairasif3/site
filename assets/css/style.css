@@ -63,6 +63,7 @@ a:hover,
 .header .top-bar .header-buttons{
     gap: 12px;
 }
+.mb-menu.after-menu .btn-deposit,
 .modal .modal-buttons .btn-closee,
 .modal .modal-buttons .btn-bonus,
 .modal .form-content .btn-submit,
@@ -758,7 +759,7 @@ a:hover,
 
 .modal.show .modal-dialog{
     max-width: 650px;
-    margin: auto;
+    margin: 30px auto;
     width: 100%;
 }
 
@@ -789,30 +790,30 @@ a:hover,
     color: #ffd375;
 }
 
-#bonusModal .tab button.active,
-#bonusModal .vector-close .btn-closed,
-#bonusModal .modal-content .title,
-#bonusModal .tab button:hover {
+.main-color-ffbf00 .tab button.active,
+.main-color-ffbf00 .vector-close .btn-closed,
+.main-color-ffbf00 .modal-content .title,
+.main-color-ffbf00 .tab button:hover {
     color: #ffbf00;
 }
-#bonusModal .tab button.active {
+.main-color-ffbf00 .tab button.active {
     border-bottom: 4px solid #ffd375;
 }
-#bonusModal .modal-content {
+.main-color-ffbf00 .modal-content {
     padding: 24px 20px;
 }
-#bonusModal .vector-close {
+.main-color-ffbf00 .vector-close {
     top: -16px;
     right: -4px;
 }
-#bonusModal .modal-content .title {
+.main-color-ffbf00 .modal-content .title {
     font-size: 17px;
     font-weight: 700;
 }
-#bonusModal .pagination-section div i {
+.main-color-ffbf00 .pagination-section div i {
     color: #ffbf00;
 }
-#bonusModal .pagination-section .pages-index.active {
+.main-color-ffbf00 .pagination-section .pages-index.active {
     border: 1px solid #ffbf00;
 }
 
@@ -839,6 +840,9 @@ a:hover,
 }
 
 
+.modal .table-content {
+    overflow-x: auto;
+}
 .modal table {
     border-collapse: separate;
     border-spacing: 0 8px;
@@ -866,6 +870,187 @@ a:hover,
     color: #fff;
 }
 
+.modal .qr-field {
+    text-align: center;
+    padding: 30px 15px;
+}
+.modal .qr-field .qr-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.modal .qr-field .qr-text {
+    font-size: 14px;
+    line-height: 1;
+    max-width: 371px;
+    margin: auto;
+}
+.modal .select-bonus-protion .img {
+    opacity: 0.4;
+    border-radius: 20px;
+    border: 4px solid #212121;
+    position: relative;
+    cursor: pointer;
+    color: #67dd5e;
+    overflow: hidden;
+}
+.modal .select-bonus-protion .img::after {
+    content: " ";
+    position: absolute;
+    background-color: #1d1d1d;
+    z-index: 1000;
+    width: 51px;
+    height: 59px;
+    bottom: -27px;
+    right: -22px;
+    transform: rotate(45deg);
+    display: none;
+}
+.modal .select-bonus-protion .img .check-vector {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    z-index: 1001;
+    display: none;
+}
+.modal .select-bonus-protion .img.active {
+    opacity: 1;
+    border-color: #ffd375;
+}
+.modal .select-bonus-protion .img.active::after,
+.modal .select-bonus-protion .img.active .check-vector {
+    display: block;
+}
 
+#historyModal .amount-history {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+#historyModal .amount-history strong {
+    font-size: 15px;
+}
+.text-ffbf00 {
+    color: #ffbf00;
+}
+
+.modal .right-idr {
+    position: relative;
+}
+.modal .right-idr .form-control {
+    padding-right: 45px;
+}
+.modal .right-idr .vector-idr {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .modal .tab button {
+        padding: 0px;
+        font-size: 12px;
+    }
+    .modal table thead th:first-child, .modal table tbody td:first-child{
+        /* padding: 10px 0px 10px 4px;
+        font-size: 12px; */
+    }
+    .modal table thead th, .modal table tbody td{
+        padding: 5px;
+        font-size: 12px;
+    }
+    #historyModal .amount-history strong{
+        font-size: 12px;
+    }
+    #historyModal .amount-history{
+        font-size: 11px;
+    }
+    .modal .modal-buttons .btn-closee, .modal .modal-buttons .btn-bonus, .modal .form-content .btn-submit{
+        font-size: 12px;
+    }
+    .modal .pagination-section div:nth-child(3),
+    .modal  .pagination-section div:nth-child(4) {
+        display: flex;
+    }
+    
+    .mb-menu.after-menu .mb-menu-content {
+        padding: 20px ;
+        position: relative;
+    }
+    .mb-menu.after-menu .mb-menu-content::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 450px;
+        top: 0px;
+        left: 0px;
+        background-color: #17171c;
+    }
+    .mb-menu.after-menu .top-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+        position: relative;
+    }
+    .mb-menu.after-menu .top-flex {
+        font-size: 20px;
+        color: #ffd375;
+    }
+    .mb-menu.after-menu .close-menu {
+        margin-bottom: 0px;
+    }
+    .mb-menu.after-menu .menu-content { 
+        position: relative;
+    }
+    .mb-menu.after-menu .top-content .vip-level { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 8px 20px;
+    }
+    .mb-menu.after-menu .top-content .vip-level .level-bar { 
+        background-color: #777777;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        position: relative;
+        border-radius: 4px;
+        padding: 8px;
+        flex: 1;
+    }
+    .mb-menu.after-menu .top-content .vip-level .level-bar::before { 
+        background-color: #ffd375;
+        content: "";
+        width: 24%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    .mb-menu.after-menu .top-content .btn-deposit {
+        width: 200px;
+    }
+    .mb-menu.after-menu .coin-menu-rate {
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffd375;
+    }
+    .mb-menu.after-menu .coin-menu-rate .d-flex {
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .mb-menu.after-menu .coin-menu-rate .d-flex img{ 
+        width: 24px;
+    }
+}
 
 
