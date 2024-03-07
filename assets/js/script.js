@@ -2,8 +2,17 @@
 $("#mb-menu-show").click(function(){
   $(".wrapper").addClass("mb-menu-show")
 })
+$("#mb-menu-show1").click(function(){
+  $(".wrapper").addClass("mb-menu-show")
+})
 $("#close-mb-menu").click(function(){
   $(".wrapper").removeClass("mb-menu-show")
+})
+$(".profile-info-div .profile-info-show").click(function(){
+  $(".profile-info-div").addClass("profile-info-show")
+})
+$(".profile-info-div .profile-vector-box .vector-cross img").click(function(){
+  $(".profile-info-div").removeClass("profile-info-show")
 })
 
 
@@ -53,16 +62,16 @@ $( ".owl-next").html('<i class="fa fa-chevron-circle-right"></i>');
 
 
        
-function openTab(evt, tabName) {
+function openTab(thisData, tabName) {
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = $($(thisData).parent().parent()).find(".tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].className = tabcontent[i].className.replace(" show", "")
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = $($(thisData).parent().parent()).find(".tablinks");
   for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(tabName).className += " show";
-  evt.currentTarget.className += " active";
+  $(thisData).addClass("active");
 }

@@ -26,14 +26,34 @@
                             <div>
                                 
                             </div> 
-                            <div class="header-buttons d-none d-md-inline-flex">
-                                <div><img src="assets/images/profile.png"> John Doe</div>
+                            <div class="header-buttons d-none d-md-inline-flex profile-info-div">
+                                <div class="profile-info-show">
+                                    <img src="assets/images/profile.png"> John Doe
+                                </div>
+                                <div class="profile-vector-box">
+                                    <div class="vector-cross"><img src="assets/images/mb-nav-icon/close.png" id="close-profile-vector"></div>
+                                    <div class="info-flex-content">
+                                        <div class="info-flex">
+                                            <div class="icon"><img src="assets/images/profile-info-1.png"></div>
+                                            <div>Email : abc@mail.com </div>
+                                        </div>
+                                        <div class="info-flex">
+                                            <div class="icon"><img src="assets/images/profile-info-2.png"></div>
+                                            <div>Mobile Number : 008008008</div>
+                                        </div>
+                                        <div class="info-flex">
+                                            <div class="icon"><img src="assets/images/profile-info-3.png"></div>
+                                            <div><a href="#">Change password</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <div class=""><img src="assets/images/wallet.png"> 888888.88</div>
                                 <a href="#" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#depositModal">Deposit</a>
                             </div>
                         </div>
                         <div class="mb-show d-md-none d-inline-flex align-items-center">
-                            <div><img src="assets/images/profile.png"> John Doe</div>
+                            <div style="min-width: 88px;"><img src="assets/images/profile.png"> John Doe</div>
                             <a href="#" class="btn btn-bar ms-2" id="mb-menu-show"><img src="assets/images/bar-menu.png" class="mw-100"></a>
                         </div>
                         <div class="right-content">
@@ -46,8 +66,8 @@
                                 </form>
                             </div>
                             <div class="bar-button">
-                                <a href="#" class="btn btn-bar d-none d-md-inline-block"><img src="assets/images/bar-menu.png" class="mw-100"></a>
-                                <a href="#" class="btn btn-bar d-md-none d-inline-block" id="mb-menu-show"><img src="assets/images/bar-menu.png" class="mw-100"></a>
+                                <!-- <a href="#" class="btn btn-bar d-none d-md-inline-block"><img src="assets/images/bar-menu.png" class="mw-100"></a> -->
+                                <a href="#" class="btn btn-bar" id="mb-menu-show1"><img src="assets/images/bar-menu.png" class="mw-100"></a>
                             </div>
                         </div>
                     </div>
@@ -101,31 +121,44 @@
                                 <div class=""><span class="text-white">ADA</span> 0</div>
                             </div>
                         </div>
-                        <a href="#" class="menu-flex">
+                        
+                        <a href="#" class="menu-flex" data-bs-toggle="modal" data-bs-target="#withdrawModal">
+                            <div class="icon"><img src="assets/images/mb-nav-icon/withdrawal.svg"></div>
+                            WITHDRAWAL
+                        </a>
+                        <a href="promotion.html" class="menu-flex">
+                            <div class="icon"><img src="assets/images/mb-nav-icon/1.png"></div>
+                            Promotion
+                        </a>
+                        <a href="#" class="menu-flex" data-bs-toggle="modal" data-bs-target="#historyModal">
+                            <div class="icon"><img src="assets/images/mb-nav-icon/history.svg"></div>
+                            History
+                        </a>
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/1.png"></div>
                             SLOTS
                         </a>
-                        <a href="#" class="menu-flex">
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/2.png"></div>
                             Sports
                         </a>
-                        <a href="#" class="menu-flex">
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/3.png"></div>
                             LIVE CASINO
                         </a>
-                        <a href="#" class="menu-flex">
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/4.png"></div>
                             DINGDONG
                         </a>
-                        <a href="#" class="menu-flex">
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/5.png"></div>
                             ARCADE
                         </a>
-                        <a href="#" class="menu-flex">
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/6.png"></div>
                             COCKFIGHT
                         </a>
-                        <a href="#" class="menu-flex">
+                        <a href="game.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/7.png"></div>
                             DD/LOTTERY
                         </a>
@@ -134,12 +167,20 @@
                             GAME PROVIDERS
                         </a>
                         <a href="#" class="menu-flex">
+                            <div class="icon"><img src="assets/images/mb-nav-icon/password.svg"></div>
+                            CHANGE PASSWORD
+                        </a>
+                        <a href="#" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/9.png"></div>
                             CONTACT
                         </a>
                         <a href="#" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/10.png"></div>
                             TERMS AND CONDITIONS
+                        </a>
+                        <a href="#" class="menu-flex">
+                            <div class="icon"><img src="assets/images/mb-nav-icon/logout.svg"></div>
+                            LOGOUT
                         </a>
                         <a href="#" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/11.png"></div>
@@ -193,7 +234,7 @@
                         <div class="index-main-section">
                             <div class="section-top">
                                 <div class="section-heading">TOP BITCOIN CASINO GAMES</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#bonusModal">Select Provider</a></div>
+                                <div class="section-button"><a href="game.html" class="btn">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -249,8 +290,8 @@
                         </div>
                         <div class="index-main-section">
                             <div class="section-top">
-                                <div class="section-heading">TOP BITCOIN CASINO GAMES</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#historyModal">Select Provider</a></div>
+                                <div class="section-heading">NEW GAMES</div>
+                                <div class="section-button"><a href="game.html" class="btn">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -307,7 +348,7 @@
                         <div class="index-main-section">
                             <div class="section-top">
                                 <div class="section-heading">SLOTS</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#withdrawModal">Select Provider</a></div>
+                                <div class="section-button"><a href="#" class="btn">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -630,16 +671,16 @@
                     <div class="row mx-auto w-100">
                         <div class="col-lg-2 col-md-2 col-sm-12 col-12">
                             <div class="footer-links">
-                                <div class="footer-link"><a href="#">Payment Mode</a></div>
+                                <div class="footer-link"><a href="#">Payment Methods</a></div>
                                 <div class="footer-link"><a href="#">Terms of use</a></div>
                                 <div class="footer-link"><a href="#">Privacy policy</a></div>
-                                <div class="footer-link"><a href="#">Bonus policy</a></div>
+                                <div class="footer-link"><a href="#">Bonus Policy</a></div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-12 col-12">
                             <div class="footer-links">
                                 <div class="footer-link"><a href="#">Live Casino</a></div>
-                                <div class="footer-link"><a href="#">Solts</a></div>
+                                <div class="footer-link"><a href="#">Slots</a></div>
                                 <div class="footer-link"><a href="#">Bitcoin Games</a></div>
                             </div>
                         </div>
@@ -680,10 +721,10 @@
                         <div class="title">Deposit</div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'crypto')"> Crypto</button>
-                        <button class="tablinks" onclick="openTab(event, 'onlinebanking')">Online Banking</button>
-                        <button class="tablinks" onclick="openTab(event, 'creditDebit')">Credit/Debit Card </button>
-                        <button class="tablinks active" onclick="openTab(event, 'qrPay')">QR Pay</button>
+                        <button class="tablinks" onclick="openTab(this, 'crypto')"> Crypto</button>
+                        <button class="tablinks" onclick="openTab(this, 'onlinebanking')">Online Banking</button>
+                        <button class="tablinks" onclick="openTab(this, 'creditDebit')">Credit/Debit Card </button>
+                        <button class="tablinks active" onclick="openTab(this, 'qrPay')">QR Pay</button>
                     </div>
                     <div class="tab-contents my-4">
                         <div id="crypto" class="tabcontent">
@@ -741,28 +782,16 @@
                         <div id="onlinebanking" class="tabcontent">
                             <div class="form-content">
                                 <form action="#">
-                                    <select name="cryptocurrency" class="form-select" required>
-                                        <option value="">Select Cryptocurrency </option>
-                                        <option value="1">Bitcoin </option>
+                                    <select name="banks" class="form-select" required>
+                                        <option value="">Select Bank </option>
+                                        <option value="1">Bank </option>
                                     </select>
-                                    <select name="network" class="form-select" required>
-                                        <option value="">Select Network </option>
-                                        <option value="1">Bitcoin </option>
-                                    </select>
-                                    <div class="uda-field">
-                                        <label class="">USDT Deposit Address</label>
-                                        <div class="form-control">
-                                            <div class="input"><input type="text" name="uda" value="31zgcxhLT15vFYWX7PjsFegAN1HAh3gfD4"></div>
-                                            <div class="copy-button">
-                                                <a href="#" class="btn btn-copy">COPY</a>
-                                            </div>
-                                        </div>
+                                    <div class="right-idr">
+                                        <input class="form-control mb-0" type="text" name="depositAccount" placeholder="Deposit Amount" required>
+                                        <div class="vector-idr">IDR</div>
                                     </div>
-                                    <div class="form-control qr-field">
-                                        <div class="qr-img"><img src="assets/images/qr.png" class=""></div>
-                                        <div class="qr-title">OPEN IN WALLET</div>
-                                        <div class="qr-text">Ensure the network you choose to deposit matches the withdrawal network, otherwise your assets may be lost.</div>
-                                    </div>
+                                    <div class="ms-4 mb-3 text-ffd375"><i>Min 50.000 / Max 100.000.000 IDR</i></div>
+                                    <input type="text" class="form-control" placeholder="Node" required>
                                     <input type="text" class="form-control" placeholder="Promo Code" required>
                                     <div class="select-bonus-protion">
                                         <label for="">Select Bonus</label>
@@ -787,34 +816,39 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="text-white mt-3">Actual Bonus</div>
                                 </form>
+                            </div>
+                            <div class="modal-buttons text-center">
+                                <a href="#" class="btn btn-bonus">DEPOSIT</a>
                             </div>
                         </div>
                         <div id="creditDebit" class="tabcontent">
                             <div class="form-content">
                                 <form action="#">
-                                    <select name="cryptocurrency" class="form-select" required>
-                                        <option value="">Select Cryptocurrency </option>
-                                        <option value="1">Bitcoin </option>
-                                    </select>
-                                    <select name="network" class="form-select" required>
-                                        <option value="">Select Network </option>
-                                        <option value="1">Bitcoin </option>
-                                    </select>
-                                    <div class="uda-field">
-                                        <label class="">USDT Deposit Address</label>
-                                        <div class="form-control">
-                                            <div class="input"><input type="text" name="uda" value="31zgcxhLT15vFYWX7PjsFegAN1HAh3gfD4"></div>
-                                            <div class="copy-button">
-                                                <a href="#" class="btn btn-copy">COPY</a>
+                                    <input type="text" class="form-control" placeholder="Credit/Debit Card Number" required>
+                                    <input type="text" class="form-control" placeholder="Name on Card" required>
+                                    <label for="">Expiration Date</label>
+                                    <div class="row mx-auto w-100 dob-field">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
+                                            <div class="form-control">
+                                                <div class="title m-0">Month</div>
+                                                <div class="input"><input type="number" value="12"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pe-0">
+                                            <div class="form-control">
+                                                <div class="title m-0">Year</div>
+                                                <div class="input"><input type="number" value="2022"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-control qr-field">
-                                        <div class="qr-img"><img src="assets/images/qr.png" class=""></div>
-                                        <div class="qr-title">OPEN IN WALLET</div>
-                                        <div class="qr-text">Ensure the network you choose to deposit matches the withdrawal network, otherwise your assets may be lost.</div>
+                                    <input type="text" class="form-control" placeholder="CVC/CVV" required>
+                                    <div class="right-idr">
+                                        <input class="form-control mb-0" type="text" name="depositAccount" placeholder="Deposit Amount" required>
+                                        <div class="vector-idr">IDR</div>
                                     </div>
+                                    <div class="ms-4 mb-3 text-ffd375"><i>Min 50.000 / Max 100.000.000 IDR</i></div>
                                     <input type="text" class="form-control" placeholder="Promo Code" required>
                                     <div class="select-bonus-protion">
                                         <label for="">Select Bonus</label>
@@ -839,7 +873,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="text-white mt-3">Actual Bonus</div>
+                                    <div class="text-ffd375">100.0000.000</div>
                                 </form>
+                                <div class="modal-buttons text-center">
+                                    <a href="#" class="btn btn-bonus">DEPOSIT</a>
+                                </div>
                             </div>
                         </div>
                         <div id="qrPay" class="tabcontent show">
@@ -912,9 +951,9 @@
                         <div class="title">Bonus and Rewards</div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks active" onclick="openTab(event, 'activeBounus')">Active Bonus</button>
-                        <button class="tablinks" onclick="openTab(event, 'availableBonus')">Available Bonus</button>
-                        <button class="tablinks" onclick="openTab(event, 'bonusHistory')">Bonus History</button>
+                        <button class="tablinks active" onclick="openTab(this, 'activeBounus')">Active Bonus</button>
+                        <button class="tablinks" onclick="openTab(this, 'availableBonus')">Available Bonus</button>
+                        <button class="tablinks" onclick="openTab(this, 'bonusHistory')">Bonus History</button>
                     </div>
                     <div class="tab-contents my-4">
                         <div id="activeBounus" class="tabcontent show">
@@ -1101,9 +1140,9 @@
                         <div class="title text-white">Transactions History</div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'depositHistory')">Deposit History</button>
-                        <button class="tablinks active" onclick="openTab(event, 'withdrawalHistory')">Withdrawal History</button>
-                        <button class="tablinks" onclick="openTab(event, 'gameHistory')">Game History</button>
+                        <button class="tablinks" onclick="openTab(this, 'depositHistory')">Deposit History</button>
+                        <button class="tablinks active" onclick="openTab(this, 'withdrawalHistory')">Withdrawal History</button>
+                        <button class="tablinks" onclick="openTab(this, 'gameHistory')">Game History</button>
                     </div>
                     <div class="tab-contents my-4">
                         <div id="depositHistory" class="tabcontent">
@@ -1165,32 +1204,154 @@
                                 <table class="w-100">
                                     <tbody>
                                         <tr>
-                                            <td><strong>AMOUNT</strong></td>
-                                            <td><strong>TRANSACTION ID</strong></td>
-                                            <td><strong>DATE AND STATUS</strong></td>
+                                            <td><strong>ROUND ID</strong></td>
+                                            <td><strong>GAME NAME</strong></td>
+                                            <td><strong>BET</strong></td>
+                                            <td><strong>WIN</strong></td>
+                                            <td><strong>STATUS</strong></td>
+                                            <td><strong>STARTED</strong></td>
+                                            <td><strong>ENDED</strong></td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="amount-history"><strong>100.0000000 BTC</strong> <br> 100.0000000 BTC</div>
+                                                <div class="game-td"> EVOS_6614 </div>
                                             </td>
-                                            <td><span class="text-ffbf00"> 0000001-080808 </span></td>
-                                            <td>2022-08-08 <span class="text-ffbf00">Successful </span>   </td>
+                                            <td>
+                                                <div class="game-td"> EVO_LIVE_INFINITE BLACK </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td text-ffbf00 d-flex gap-2 align-items-center"> <img src="assets/images/support/1.png" width="20px"> 13.3333333333</div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> - </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 12:00:00 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 13:00:00 </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="amount-history"><strong>200.0000000 BTC</strong> <br> 200.0000000 BTC</div>
+                                                <div class="game-td"> EVOS_6614 </div>
                                             </td>
-                                            <td><span class="text-ffbf00"> 0000002-090909 </span></td>
-                                            <td>2022-09-08 <span class="text-ffbf00">Successful </span>   </td>
+                                            <td>
+                                                <div class="game-td"> EVO_LIVE_INFINITE BLACK </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td text-ffbf00 d-flex gap-2 align-items-center"> <img src="assets/images/support/1.png" width="20px"> 13.3333333333</div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> - </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 12:00:00 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 13:00:00 </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="game-td"> EVOS_6614 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> EVO_LIVE_INFINITE BLACK </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td text-ffbf00 d-flex gap-2 align-items-center"> <img src="assets/images/support/1.png" width="20px"> 13.3333333333</div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> - </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 12:00:00 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 13:00:00 </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="game-td"> EVOS_6614 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> EVO_LIVE_INFINITE BLACK </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td text-ffbf00 d-flex gap-2 align-items-center"> <img src="assets/images/support/1.png" width="20px"> 13.3333333333</div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> - </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 12:00:00 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 13:00:00 </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="game-td"> EVOS_6614 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> EVO_LIVE_INFINITE BLACK </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td text-ffbf00 d-flex gap-2 align-items-center"> <img src="assets/images/support/1.png" width="20px"> 13.3333333333</div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> - </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 12:00:00 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 13:00:00 </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="game-td"> EVOS_6614 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> EVO_LIVE_INFINITE BLACK </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td text-ffbf00 d-flex gap-2 align-items-center"> <img src="assets/images/support/1.png" width="20px"> 13.3333333333</div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> - </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 12:00:00 </div>
+                                            </td>
+                                            <td>
+                                                <div class="game-td"> 2022-08-08 | 13:00:00 </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-buttons text-center">
-                        <a href="#" class="btn btn-closee">CLOSE</a>
-                        <a href="#" class="btn btn-bonus">DEPOSIT</a>
+                        <a href="#" class="btn btn-closee" data-bs-dismiss="modal">CLOSE</a>
+                        <a href="#" class="btn btn-bonus" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#depositModal">DEPOSIT</a>
                     </div>
                 </div>
             </div>
@@ -1210,8 +1371,8 @@
                         <div class="title">Withdraw</div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks active" onclick="openTab(event, 'bankAccount')"> Bank Account</button>
-                        <button class="tablinks" onclick="openTab(event, 'withdraw-crypto')">Crypto</button>
+                        <button class="tablinks active" onclick="openTab(this, 'bankAccount')"> Bank Account</button>
+                        <button class="tablinks" onclick="openTab(this, 'withdraw-crypto')">Crypto</button>
                     </div>
                     <div class="tab-contents my-4">
                         <div id="bankAccount" class="tabcontent show">
@@ -1245,28 +1406,31 @@
                         <div id="withdraw-crypto" class="tabcontent">
                             <div class="form-content">
                                 <form action="#">
-                                    <select name="bank" class="form-select" required>
-                                        <option value="">Select Bank </option>
-                                        <option value="1">Bank 1 </option>
+                                    <select name="cryptocurrency" class="form-select" required>
+                                        <option value="">Select Cryptocurrency </option>
+                                        <option value="1">Bitcoin </option>
                                     </select>
-                                    <input class="form-control" type="text" name="bankAccountName" placeholder="Bank Account Name" required>
-                                    <input class="form-control" type="text" name="bankAccountNumber" placeholder="Bank Account Number" required>
+                                    <select name="network" class="form-select" required>
+                                        <option value="">Select Network </option>
+                                        <option value="1">Network </option>
+                                    </select>
+                                    <input class="form-control" type="text" name="usdtWithdrawAddress" placeholder="USDT Withdraw Address" required>
+                                    <input class="form-control" type="text" name="WithdrawAmmount" placeholder="Withdraw Ammount" required>
                                     <div class="right-idr">
                                         <input class="form-control" type="text" name="withdrawAccount" placeholder="Withdraw Amount" required>
-                                        <div class="vector-idr">IDR</div>
+                                        <div class="vector-idr">USDT</div>
                                     </div>
                                     <div class="uda-field"> 
-                                        <label class="">
-                                            Available: 14,443.678 IDR <br><br> Min 100.000 / Max 100.000.000 IDR <br><br> Transantion Fee 10.000IDR
-                                        </label>
-                                        <hr>
-                                        <label class="text-white mb-3">Amount Receivable</label><br>
-                                        <label for="">100.000.000</label>
+                                        <div class="ms-4 text-ffbf00 mb-4">
+                                            <i style="line-height: 2;">Available: 18,888.30 USDT <br> Min 20/Max 5000 USDT <br> Conversion Rate 15.320 IDR <br> Transantion Fee 5 USDT</i>
+                                        </div>
+                                        <label class="text-white">Amount Receivable</label><br>
+                                        <label for="" class="mb-3">100.000.000</label>
                                     </div>
                                     <div class="modal-buttons text-center">
                                         <a href="#" class="btn btn-bonus">WITHDRAW</a>
                                     </div>
-                                    <p class="text-white mt-4 text-center">Please ensure that you have filled in the bank details correctly.</p>
+                                    <p class="text-white mt-4 text-center">Your withdraw will have 1 USDT subtracted from your remaining balance to cover the fee required to process the transaction.</p>
                                 </form>
                             </div>
                         </div>
