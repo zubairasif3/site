@@ -8,11 +8,11 @@ $("#mb-menu-show1").click(function(){
 $("#close-mb-menu").click(function(){
   $(".wrapper").removeClass("mb-menu-show")
 })
-$(".profile-info-div .profile-info-show").click(function(){
-  $(".profile-info-div").addClass("profile-info-show")
+$(".profile-info-show").click(function(){
+  $("#profile-info-div").addClass("profile-info-show")
 })
 $(".profile-info-div .profile-vector-box .vector-cross img").click(function(){
-  $(".profile-info-div").removeClass("profile-info-show")
+  $("#profile-info-div").removeClass("profile-info-show")
 })
 
 

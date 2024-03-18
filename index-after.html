@@ -21,7 +21,7 @@
                     <div class="top-bar">
                         <div class="left-content">
                             <div class="logo">
-                                <img src="assets/images/logo.png" class="mw-100">
+                                <a href="index-after.html"><img src="assets/images/logo.png" class="mw-100"></a>
                             </div>
                             <div>
                                 
@@ -30,6 +30,11 @@
                                 <div class="profile-info-show">
                                     <img src="assets/images/profile.png"> John Doe
                                 </div>
+                                
+                                <div class=""><img src="assets/images/wallet.png"> 888888.88</div>
+                                <a href="#" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#depositModal">Deposit</a>
+                            </div>
+                            <div class="profile-info-div" id="profile-info-div">
                                 <div class="profile-vector-box">
                                     <div class="vector-cross"><img src="assets/images/mb-nav-icon/close.png" id="close-profile-vector"></div>
                                     <div class="info-flex-content">
@@ -47,13 +52,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class=""><img src="assets/images/wallet.png"> 888888.88</div>
-                                <a href="#" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#depositModal">Deposit</a>
                             </div>
                         </div>
                         <div class="mb-show d-md-none d-inline-flex align-items-center">
-                            <div style="min-width: 88px;"><img src="assets/images/profile.png"> John Doe</div>
+                            <div style="min-width: 88px;" class="profile-info-show"><img src="assets/images/profile.png"> John Doe</div>
                             <a href="#" class="btn btn-bar ms-2" id="mb-menu-show"><img src="assets/images/bar-menu.png" class="mw-100"></a>
                         </div>
                         <div class="right-content">
@@ -129,6 +131,10 @@
                         <a href="promotion.html" class="menu-flex">
                             <div class="icon"><img src="assets/images/mb-nav-icon/1.png"></div>
                             Promotion
+                        </a>
+                        <a href="#" class="menu-flex" data-bs-toggle="modal" data-bs-target="#bonusModal">
+                            <div class="icon"><img src="assets/images/mb-nav-icon/withdrawal.svg"></div>
+                            Bounce and Rewards
                         </a>
                         <a href="#" class="menu-flex" data-bs-toggle="modal" data-bs-target="#historyModal">
                             <div class="icon"><img src="assets/images/mb-nav-icon/history.svg"></div>
@@ -234,7 +240,7 @@
                         <div class="index-main-section">
                             <div class="section-top">
                                 <div class="section-heading">TOP BITCOIN CASINO GAMES</div>
-                                <div class="section-button"><a href="game.html" class="btn">Select Provider</a></div>
+                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -291,7 +297,7 @@
                         <div class="index-main-section">
                             <div class="section-top">
                                 <div class="section-heading">NEW GAMES</div>
-                                <div class="section-button"><a href="game.html" class="btn">Select Provider</a></div>
+                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -348,7 +354,7 @@
                         <div class="index-main-section">
                             <div class="section-top">
                                 <div class="section-heading">SLOTS</div>
-                                <div class="section-button"><a href="#" class="btn">Select Provider</a></div>
+                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -405,7 +411,7 @@
                         <div class="index-main-section">
                             <div class="section-top">
                                 <div class="section-heading">DINGDONG</div>
-                                <div class="section-button"><a href="#" class="btn">Select Provider</a></div>
+                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
                             </div>
                             <div class="imgs-flex">
                                 <div class="img-item">
@@ -672,16 +678,16 @@
                         <div class="col-lg-2 col-md-2 col-sm-12 col-12">
                             <div class="footer-links">
                                 <div class="footer-link"><a href="#">Payment Methods</a></div>
-                                <div class="footer-link"><a href="#">Terms of use</a></div>
+                                <div class="footer-link"><a href="#">Terms and Conditions</a></div>
                                 <div class="footer-link"><a href="#">Privacy policy</a></div>
                                 <div class="footer-link"><a href="#">Bonus Policy</a></div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-12 col-12">
                             <div class="footer-links">
-                                <div class="footer-link"><a href="#">Live Casino</a></div>
-                                <div class="footer-link"><a href="#">Slots</a></div>
-                                <div class="footer-link"><a href="#">Bitcoin Games</a></div>
+                                <div class="footer-link"><a href="game.html">Live Casino</a></div>
+                                <div class="footer-link"><a href="game.html">Slots</a></div>
+                                <div class="footer-link"><a href="game.html">Bitcoin Games</a></div>
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-12 col-12">
@@ -721,13 +727,13 @@
                         <div class="title">Deposit</div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(this, 'crypto')"> Crypto</button>
+                        <button class="tablinks active" onclick="openTab(this, 'crypto')"> Crypto</button>
                         <button class="tablinks" onclick="openTab(this, 'onlinebanking')">Online Banking</button>
                         <button class="tablinks" onclick="openTab(this, 'creditDebit')">Credit/Debit Card </button>
-                        <button class="tablinks active" onclick="openTab(this, 'qrPay')">QR Pay</button>
+                        <button class="tablinks" onclick="openTab(this, 'qrPay')">QR Pay</button>
                     </div>
                     <div class="tab-contents my-4">
-                        <div id="crypto" class="tabcontent">
+                        <div id="crypto" class="tabcontent show">
                             <div class="form-content">
                                 <form action="#">
                                     <select name="cryptocurrency" class="form-select" required>
@@ -881,7 +887,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="qrPay" class="tabcontent show">
+                        <div id="qrPay" class="tabcontent">
                             <div class="form-content">
                                 <form action="#">
                                     <select name="cryptocurrency" class="form-select" required>
@@ -1140,12 +1146,12 @@
                         <div class="title text-white">Transactions History</div>
                     </div>
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(this, 'depositHistory')">Deposit History</button>
-                        <button class="tablinks active" onclick="openTab(this, 'withdrawalHistory')">Withdrawal History</button>
+                        <button class="tablinks active" onclick="openTab(this, 'depositHistory')">Deposit History</button>
+                        <button class="tablinks" onclick="openTab(this, 'withdrawalHistory')">Withdrawal History</button>
                         <button class="tablinks" onclick="openTab(this, 'gameHistory')">Game History</button>
                     </div>
                     <div class="tab-contents my-4">
-                        <div id="depositHistory" class="tabcontent">
+                        <div id="depositHistory" class="tabcontent show">
                             <div class="table-content">
                                 <table class="w-100">
                                     <tbody>
@@ -1172,7 +1178,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div id="withdrawalHistory" class="tabcontent show">
+                        <div id="withdrawalHistory" class="tabcontent">
                             <div class="table-content">
                                 <table class="w-100">
                                     <tbody>
@@ -1358,7 +1364,6 @@
         </div>
     </div>
 
-
     <!-- Withdraw Modal  -->
     <div class="modal fade" id="withdrawModal" tabindex="-1" aria-labelledby="withdrawModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1432,6 +1437,454 @@
                                     </div>
                                     <p class="text-white mt-4 text-center">Your withdraw will have 1 USDT subtracted from your remaining balance to cover the fee required to process the transaction.</p>
                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Provider Modal  -->
+    <div class="modal fade main-color-ffbf00" id="ProviderModal" tabindex="-1" aria-labelledby="ProviderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="vector-close">
+                        <button type="button" class="btn btn-closed" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="top-content text-center">
+                        <div class="title text-white">CASINO888 PROVIDERS</div>
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTab(this, 'slotsTab')">SLOTS</button>
+                        <button class="tablinks" onclick="openTab(this, 'sportsTab')">SPORTS</button>
+                        <button class="tablinks" onclick="openTab(this, 'casinoTab')">LIVE CASINO</button>
+                        <button class="tablinks" onclick="openTab(this, 'dingdongTab')">DINDONG</button>
+                        <button class="tablinks" onclick="openTab(this, 'arcadeTab')">ARCADE</button>
+                        <button class="tablinks" onclick="openTab(this, 'cockfighterTab')">COCKFIGHTER</button>
+                        <button class="tablinks" onclick="openTab(this, 'ddlotterTab')">DD/LOTTERY</button>
+                    </div>
+                    <div class="tab-contents my-4">
+                        <div id="slotsTab" class="tabcontent show">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sportsTab" class="tabcontent">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="casinoTab" class="tabcontent">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dingdongTab" class="tabcontent">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="arcadeTab" class="tabcontent">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cockfighterTab" class="tabcontent">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ddlotterTab" class="tabcontent">
+                            <div class="images-content">
+                                <div class="row w-100 mx-auto">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
+                                            <div class="img-title">PLAYTEXH</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
+                                            <div class="img-title">918KAYA</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
+                                            <div class="img-title">PRAGMATIC PLAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
+                                            <div class="img-title">ASIA GAMING</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
+                                            <div class="img-title">SCR 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
+                                            <div class="img-title">CASINO</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
+                                            <div class="img-title">MEGA 888</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                                        <div class="img-card">
+                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
+                                            <div class="img-title">HABANERO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-section">
+                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
+                                    <div class="pages-index active">1</div>
+                                    <div class="pages-index d-inline-flex">2</div>
+                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
+                                </div>
                             </div>
                         </div>
                     </div>
