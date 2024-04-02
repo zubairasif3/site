@@ -1017,6 +1017,9 @@ a:hover,
 }
 
 @media screen and (max-width: 767px) {
+    .modal .tab {
+        flex-wrap: wrap;
+    }
     .modal .tab button {
         padding: 0px;
         font-size: 12px;
