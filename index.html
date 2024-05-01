@@ -3,1165 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <!-- fontawesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- owlcarousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>360</title>
 </head>
-<body class="index-body">
+<body>
     <div class="wrapper">
-        <div class="header">
-            <div class="top-bg">
+        <div class="container-fluid">
+            <div class="header-section index-header-section">
                 <div class="container">
-                    <div class="top-bar">
-                        <div class="left-content">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/images/logo.png" class="mw-100"></a>
-                            </div>
-                            <div>
-                                
-                            </div>
-                            <div class="header-buttons">
-                                <a href="#" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
-                                <a href="#" class="btn btn-signup" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign up</a>
-                            </div>
-                            <div class="bar-button">
-                                <!-- <a href="#" class="btn btn-bar" ><img src="assets/images/bar-menu.png" class="mw-100"></a> -->
-                                <a href="#" class="btn btn-bar" id="mb-menu-show"><img src="assets/images/bar-menu.png" class="mw-100"></a>
-                            </div>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div><a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a></div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <div class="close-mb-sidebar" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">x</div>
+                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                            <a class="nav-link" href="how-it-works.html">How It Works</a>
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </div>
-                        <div class="right-content">
-                            <div class="search-bar">
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                        <button type="submit" class="btn btn-submit"><img src="assets/images/icon-search.png" class="mw-100"></button>
-                                    </div>
+                        </div>
+                        <div class="signup-flex">
+                            <div class="signup-btn"><a href="contact-us.html">Sign up</a></div>
+                            <div class="login-btn"><a href="contact-us.html">Login</a></div>
+                        </div>
+                    </nav>
+                    <div class="hero-section">
+                        <div class="row mx-auto w-100">
+                            <div class="col-lg-7 col-md-6 col-sm-12 col-12">
+                                <div class="hero-section-heading">Never Run Out <br> Of Data Again!</div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                                <div class="right-side-text pb-4 pt-4">Stay connected , wherever you travel</div>
+                                <div class="right-side-text">Easy Access</div>
+                                <div class="right-side-text">Fast Server</div>
+                                <div class="right-side-text">Security Guaranteed</div>
+                                <form class="hero-section-input mt-5" action="" method="POST">
+                                    <input type="text"  class="form-control" name="business" required autocomplete="off" placeholder="Enter your email address">
+                                    <input class="btn"  value="Sign Up" type="submit">
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="mb-menu">
-                <div class="mb-menu-content">
-                    <div class="close-menu">
-                        <img src="assets/images/mb-nav-icon/close.png" id="close-mb-menu">
+                    <div class="transparent-img text-center">
+                        <img src="assets/images/transparent-bg.png" alt="">
                     </div>
-                    <div class="menu-content">
-                        <a href="promotion.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/1.png"></div>
-                            Promotion
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/1.png"></div>
-                            SLOTS
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/2.png"></div>
-                            Sports
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/3.png"></div>
-                            LIVE CASINO
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/4.png"></div>
-                            DINGDONG
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/5.png"></div>
-                            ARCADE
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/6.png"></div>
-                            COCKFIGHT
-                        </a>
-                        <a href="game.html" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/7.png"></div>
-                            DD/LOTTERY
-                        </a>
-                        <a href="#" class="menu-flex" data-bs-toggle="modal" data-bs-target="#ProviderModal">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/8.png"></div>
-                            GAME PROVIDERS
-                        </a>
-                        <a href="#" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/9.png"></div>
-                            CONTACT
-                        </a>
-                        <a href="#" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/10.png"></div>
-                            TERMS AND CONDITIONS
-                        </a>
-                        <a href="#" class="menu-flex">
-                            <div class="icon"><img src="assets/images/mb-nav-icon/11.png"></div>
-                            English
-                        </a>
+                </div>
+                <div class="header-bottom">
+                    <img src="assets/images/header-bottom.png" alt="" class="w-100">
+                    <div class="arrow-bg">
+                        <img src="assets/images/text-green.png" class="mw-100">
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-content">
-            <div class="container">
-                <div class="row w-100 mx-auto">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-12">
-                        <div class="hero-section">
-                            <div class="owl-slider">
-                                <div class="owl-carousel hero-carousel">
-                                    <div class="item">
-                                        <div class="img"><img src="assets/images/index/hero.png" class="w-100"></div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="img"><img src="assets/images/index/hero.png" class="w-100"></div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="img"><img src="assets/images/index/hero.png" class="w-100"></div>
-                                    </div>
-                                </div>
+            <div class="main-content">
+                <div class="container">
+                    <div class="section1 py-5">
+                        <div class="row mx-auto w-100">
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                                <div class="section1-heading1 pt-2">About Us</div>
                             </div>
-                        </div>
-                        <div class="search-bar d-md-none">
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <button type="submit" class="btn btn-submit"><img src="assets/images/icon-search.png" class="mw-100"></button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="support-div">
-                            <div class="section-heading">We support</div>
-                            <div class="support-icons">
-                                <img src="assets/images/support/1.png" class="mw-100">
-                                <img src="assets/images/support/2.png" class="mw-100">
-                                <img src="assets/images/support/3.png" class="mw-100">
-                                <img src="assets/images/support/4.png" class="mw-100">
-                                <img src="assets/images/support/5.png" class="mw-100">
-                                <img src="assets/images/support/6.png" class="mw-100">
-                                <img src="assets/images/support/7.png" class="mw-100">
-                                <img src="assets/images/support/8.png" class="mw-100">
-                                <img src="assets/images/support/9.png" class="mw-100">
-                            </div>
-                        </div>
-                        <div class="index-main-section">
-                            <div class="section-top">
-                                <div class="section-heading">TOP BITCOIN CASINO GAMES</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
-                            </div>
-                            <div class="imgs-flex">
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/1.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">LOST TREASURE</div>
-                                        <div><i>Evolution gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/2.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Panda</div>
-                                        <div><i>Ameba gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/3.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">777 </div>
-                                        <div><i>Habanero gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/4.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Alliance </div>
-                                        <div><i>PG Soft gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/5.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Candy Pop</div>
-                                        <div><i>Evolution gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/6.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">BREAK AWAY</div>
-                                        <div><i>Playtech gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/7.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Money-Tree</div>
-                                        <div><i>PG Soft gaming</i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="index-main-section">
-                            <div class="section-top">
-                                <div class="section-heading">NEW GAMES</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
-                            </div>
-                            <div class="imgs-flex">
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/1.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">LOST TREASURE</div>
-                                        <div><i>Evolution gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/2.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Panda</div>
-                                        <div><i>Ameba gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/3.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">777 </div>
-                                        <div><i>Habanero gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/4.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Alliance </div>
-                                        <div><i>PG Soft gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/5.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Candy Pop</div>
-                                        <div><i>Evolution gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/6.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">BREAK AWAY</div>
-                                        <div><i>Playtech gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/7.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Money-Tree</div>
-                                        <div><i>PG Soft gaming</i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="index-main-section">
-                            <div class="section-top">
-                                <div class="section-heading">SLOTS</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
-                            </div>
-                            <div class="imgs-flex">
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/8.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Poprocks </div>
-                                        <div><i>Playtech gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/1.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Highway King Pro</div>
-                                        <div><i>PG Soft gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/9.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Kungfu Monkey</div>
-                                        <div><i>evolution gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/10.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Captain's Treasure</div>
-                                        <div><i>Habanero gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/11.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Pacquiao One Punch</div>
-                                        <div><i>Habanero gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/12.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Fortune House </div>
-                                        <div><i>Joker gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/13.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Lion Dance</div>
-                                        <div><i>PO Soft gaming</i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="index-main-section">
-                            <div class="section-top">
-                                <div class="section-heading">DINGDONG</div>
-                                <div class="section-button"><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#ProviderModal">Select Provider</a></div>
-                            </div>
-                            <div class="imgs-flex">
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/8.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Poprocks </div>
-                                        <div><i>Playtech gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/1.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Highway King Pro</div>
-                                        <div><i>PG Soft gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/9.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Kungfu Monkey</div>
-                                        <div><i>evolution gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/10.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Captain's Treasure</div>
-                                        <div><i>Habanero gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/11.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Pacquiao One Punch</div>
-                                        <div><i>Habanero gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/12.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Fortune House </div>
-                                        <div><i>Joker gaming</i></div>
-                                    </div>
-                                </div>
-                                <div class="img-item">
-                                    <div class="img"><img src="assets/images/index/1.png"></div>
-                                    <div class="img-content">
-                                        <div class="title">Lion Dance</div>
-                                        <div><i>PO Soft gaming</i></div>
-                                    </div>
-                                </div>
+                            <div class="col-lg-7 col-md-6 col-sm-12 col-12">
+                                <div class="section1-heading2">Where are you traveling <br> next?</div>
+                                <div class="section1-heading3 py-4">Choose your destination first, then choose a data plan..</div>
+                                <div class="login-btn contact-btn pt-2 pb-5"><a href="#">Contact us</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div class="index-card winner-card">
-                            <div class="index-card-title">Recent Bitcoin Casino winners</div>
-                            <div class="index-card-content">
-                                <div class="index-card-item">
-                                    <div class="index-card-item-flex align-items-center">
-                                        <div class="main-img"><img src="assets/images/index/right-cards/1.png"></div>
-                                        <div>
-                                            <div class="title">Buu*** Namo*2021</div>
-                                            <div class="text-white fs-10">Journey to the west</div>
-                                        </div>
+                    <div class="section1-heading2 text-center pt-5 pb-5">Affordable Pricing <br> Plan</div>
+                    <div class="card-section py-5">
+                        <div class="row mx-auto w-100">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Europe+</div>
+                                    <div class="description">
+                                        Price: 4.$-58$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 35 countries
                                     </div>
-                                    <div class="index-card-item-flex">
-                                        <div class="img coin-img"><img src="assets/images/support/1.png"></div>
-                                        <div>
-                                            <div class="coin-title">0.088888888</div>
-                                            <div class="coin-rate fs-10">10 seconds from now</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="index-card-item-flex align-items-center">
-                                        <div class="main-img"><img src="assets/images/index/right-cards/2.png"></div>
-                                        <div>
-                                            <div class="title">Y*B K0*F*L888</div>
-                                            <div class="text-white fs-10">Circus Delight</div>
-                                        </div>
-                                    </div>
-                                    <div class="index-card-item-flex">
-                                        <div class="img coin-img"><img src="assets/images/support/5.png"></div>
-                                        <div>
-                                            <div class="coin-title">0.00237812</div>
-                                            <div class="coin-rate fs-10">8 seconds ago</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="index-card-item-flex align-items-center">
-                                        <div class="main-img"><img src="assets/images/index/right-cards/3.png"></div>
-                                        <div>
-                                            <div class="title">K0y@ Ja*g*L</div>
-                                            <div class="text-white fs-10">Gates of Olympus</div>
-                                        </div>
-                                    </div>
-                                    <div class="index-card-item-flex">
-                                        <div class="img coin-img"><img src="assets/images/support/4.png"></div>
-                                        <div>
-                                            <div class="coin-title">0.000784134</div>
-                                            <div class="coin-rate fs-10">5 seconds from now</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="index-card-item-flex align-items-center">
-                                        <div class="main-img"><img src="assets/images/index/right-cards/4.png"></div>
-                                        <div>
-                                            <div class="title">G**ry J@ck***ro2022</div>
-                                            <div class="text-white fs-10">Forest Treasure</div>
-                                        </div>
-                                    </div>
-                                    <div class="index-card-item-flex">
-                                        <div class="img coin-img"><img src="assets/images/support/9.png"></div>
-                                        <div>
-                                            <div class="coin-title">0.000004583</div>
-                                            <div class="coin-rate fs-10">15 seconds ago</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="index-card-item-flex align-items-center">
-                                        <div class="main-img"><img src="assets/images/index/right-cards/5.png"></div>
-                                        <div>
-                                            <div class="title">W@lA*Hr**Y*B</div>
-                                            <div class="text-white fs-10">Monkey King</div>
-                                        </div>
-                                    </div>
-                                    <div class="index-card-item-flex">
-                                        <div class="img coin-img"><img src="assets/images/support/5.png"></div>
-                                        <div>
-                                            <div class="coin-title">0.015878921</div>
-                                            <div class="coin-rate fs-10">17 seconds ago</div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img1.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="index-card">
-                            <div class="index-card-title">Play 3,000+ casino games,win in any cryptocurrency!</div>
-                            <div class="index-card-content">
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/1.png"></div>
-                                    <div>
-                                        <div class="coin-title">BITCOIN CASINO</div>
-                                        <div class="coin-rate">BTC: $54418.00</div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">North America+</div>
+                                    <div class="description">
+                                        Price: 10$ to 72$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 3 countries <br>
                                     </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/2.png"></div>
-                                    <div>
-                                        <div class="coin-title">ETHEREUM CASINO</div>
-                                        <div class="coin-rate">ETH: $35489.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/3.png"></div>
-                                    <div>
-                                        <div class="coin-title">DOGECOIN CASINO</div>
-                                        <div class="coin-rate">DOGE: $23471.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/4.png"></div>
-                                    <div>
-                                        <div class="coin-title">TETHER CASINO</div>
-                                        <div class="coin-rate">TET: $32597.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/5.png"></div>
-                                    <div>
-                                        <div class="coin-title">BNB CASINO</div>
-                                        <div class="coin-rate">BNB: $15896.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/6.png"></div>
-                                    <div>
-                                        <div class="coin-title">XRP CASINO</div>
-                                        <div class="coin-rate">XRP: $65378.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/7.png"></div>
-                                    <div>
-                                        <div class="coin-title">USDC CASINO</div>
-                                        <div class="coin-rate">USDC: $21896.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/8.png"></div>
-                                    <div>
-                                        <div class="coin-title">BUSD CASINO</div>
-                                        <div class="coin-rate">BUSD: $15254.00</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/support/9.png"></div>
-                                    <div>
-                                        <div class="coin-title">XMR CASINO</div>
-                                        <div class="coin-rate">XMR: $48712.00</div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img2.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="index-card bitcoin-game">
-                            <div class="index-card-title">Top 5 Bitcoin Game Providers that you can play </div>
-                            <div class="index-card-content">
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/index/right-cards/5.png"></div>
-                                    <div>
-                                        <div class="text-white">Pragmatic Play with Bitcoin</div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Latin America+</div>
+                                    <div class="description">
+                                        Price: 12$ to 156$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 11 countries <br>
                                     </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/index/right-cards/6.png"></div>
-                                    <div>
-                                        <div class="text-white">Playtech with Bitcoin</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/index/right-cards/7.png"></div>
-                                    <div>
-                                        <div class="text-white">PG Soft with Bitcoin</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/index/right-cards/8.png"></div>
-                                    <div>
-                                        <div class="text-white">Joker  with Bitcoin</div>
-                                    </div>
-                                </div>
-                                <div class="index-card-item">
-                                    <div class="img"><img src="assets/images/index/right-cards/9.png"></div>
-                                    <div>
-                                        <div class="text-white">Habanero with Bitcoin</div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img3.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="index-card-button text-center">
-                                <a href="#" class="btn"> Show all <span> 50 Providers</span></a>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Middle East+</div>
+                                    <div class="description">
+                                        Price: 10$ to 183$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 8 countries <br>
+                                    </div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img4.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Asia+</div>
+                                    <div class="description">
+                                        Price: 6$ to 132$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 13 countries <br>
+                                    </div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img5.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Oceania+</div>
+                                    <div class="description">
+                                        Price: 10$ to 153$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 2 countries <br>
+                                    </div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img6.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Africa+</div>
+                                    <div class="description">
+                                        Price: 10$ to 183$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 3 countries <br>
+                                    </div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img7.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Carribbean+</div>
+                                    <div class="description">
+                                        Price: 37.5$ to 166$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 16 countries <br>
+                                    </div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img8.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="title">Global+</div>
+                                    <div class="description">
+                                        Price: 15$ to 180$ <br>
+                                        Data 1GB-50GB <br>
+                                        Days: 7-30 <br>
+                                        Coverage 104 countries <br>
+                                    </div>
+                                    <div class="learn-more-flex">
+                                        <div class="card-img1"><img src="assets/images/card/img9.png" alt=""></div>
+                                        <div class="learn-more">
+                                            <a href="#">Learn More <hr></a>
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-section">
-            <div class="container">
-                <div class="top-footer">
+            <div class="section2">
+                <div class="container">
+                    <div class="heading pb-5">Enjoy reliable and affordable internet in your trips. We get you covered.</div>
+                    <div class="row mx-auto w-100 pt-2">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="card card-two">
+                                <div class="title">24/7 Customer Support</div>
+                                <div class="card-two-description">In need of assistance? Our 24/7 chat support is just a message away to keep you connected and help you with everything you need.</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="card card-two">
+                                <div class="title">Keep using your favorite apps</div>
+                                <div class="card-two-description">Get that safe ride home, find that great restaurant, and pin the local attractions, all while staying connected with your loved ones.</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="card card-two">
+                                <div class="title">Make and receive calls</div>
+                                <div class="card-two-description">Looking for a local phone number while abroad? Get one in select destinations to make and receive calls or for security checkpoints with your bank.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto w-100 justify-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="card card-two">
+                                <div class="title">Enjoy dual SIMs</div>
+                                <div class="card-two-description">Enjoy the flexibility of our digital eSIM while keeping the option to use your original SIM as usual whenever you need it.</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="card card-two">
+                                <div class="title">Fast Internet Connection</div>
+                                <div class="card-two-description">Connect to the best networks at your destination and get internet that’s both reliable and fast</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="learn-more section2-hr align-items-start">
+                            <span class="card-two-description">Check out all our services</span>
+                            <a href="#" class="section2-learnmore"> View More <hr></a>
+                            <svg aria-hidden="true" fill="#f3f3f3" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="pt-5">
+                    <div class="container">
+                        <div class="row mx-auto w-100">
+                            <div class="col-lg-8 col-md-6 col-sm-12 col-12">
+                                <div class="ps-5">
+                                    <div class="heading text-start pt-0">Start your journey with eSIM360!</div>
+                                    <div class="tick-text pt-3"><img src="assets/icons/tick.svg" alt="">Easy access</div>
+                                    <div class="tick-text"><img src="assets/icons/tick.svg" alt="">Fast server</div>
+                                    <div class="tick-text"><img src="assets/icons/tick.svg" alt="">Security Guaranteed</div>
+                                </div>
+                            </div> 
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 pe-0">
+                                <div class="secton2-tick-img"><img src="assets/images/transparent-bg.png" alt="" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2 footer-section">
+                <div class="container">
+                    <div class="section2-border"></div>
                     <div class="row mx-auto w-100">
-                        <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-                            <div class="footer-links">
-                                <div class="footer-link"><a href="#">FAQs</a></div>
-                                <div class="footer-link"><a href="#">Terms and Conditions</a></div>
-                                <div class="footer-link"><a href="#">Privacy policy</a></div>
-                                <div class="footer-link"><a href="#">AML Policy</a></div>
-                                <div class="footer-link"><a href="#">Responsible Gaming</a></div>
+                        <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                            <div class="footer-img"><img src="assets/images/logo.png" alt=""></div>
+                            <div class="card-two-description">eSIM360 offers a comprehensive <br> solution to the inconvenience of <br> expensive roaming charges. Gain <br> access to 180+ eSIMs (digital SIM <br> cards) worldwide at competitive <br> prices.</div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="quick-link">Quick link</div>
+                            <div class="social-link">
+                                <div class="link1 pb-2"><a href="index.html">Home</a></div>
+                                <div class="link1 pb-2"><a href="about-us.html">About Us</a></div>
+                                <div class="link1 pb-2"><a href="how-it-works.html">How it works</a></div>
+                                <div class="link1 pb-2"><a href="faq.html">FAQ</a></div>
+                                <div class="link1 pb-2"><a href="contact-us.html">Contact Us</a></div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-                            <div class="footer-links">
-                                <div class="footer-link"><a href="game.html">Live Casino</a></div>
-                                <div class="footer-link"><a href="game.html">Slots</a></div>
-                                <div class="footer-link"><a href="game.html">Bitcoin Games</a></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                            <div class="quick-link">Contact</div>
+                            <div class="social-link">
+                                <div class="link1 pb-2"><a href="#"><img src="assets/icons/call.svg" alt="">+3670 203 9596</a></div>
+                                <div class="link1 pb-2"><a href="#"><img src="assets/icons/mail.svg" alt="">support@esim360.eu</a></div>
                             </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                            <div class="provider-section p-0">
-                                <div class="title text-white">Game Providers</div>
-                                <div class="provider-imgs">
-                                    <img src="assets/images/provider/1.png" class="mw-100">
-                                    <img src="assets/images/provider/2.png" class="mw-100">
-                                    <img src="assets/images/provider/3.png" class="mw-100">
-                                    <img src="assets/images/provider/4.png" class="mw-100">
-                                    <img src="assets/images/provider/5.png" class="mw-100">
-                                    <img src="assets/images/provider/6.png" class="mw-100">
-                                    <img src="assets/images/provider/7.png" class="mw-100">
-                                    <img src="assets/images/provider/8.png" class="mw-100">
-                                    <img src="assets/images/provider/9.png" class="mw-100">
-                                </div>
+                            <div class="social-icons pt-2">
+                                <div class="facebook"><a href="#"><i class="fab fa-facebook-f" style="color: #f3f3f3;"></i></a></div>
+                                <div class="facebook"><a href="#"><i class="fab fa-twitter" style="color: #f3f3f3;"></i></a></div>
+                                <div class="facebook"><a href="#"><i class="fab fa-youtube" style="color: #f3f3f3;"></i></a></div>
+                                <div class="facebook"><a href="#"><i class="fab fa-linkedin" style="color: #f3f3f3;"></i></a></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="copyright-footer">
-                    <div class="text">&#169; CASINO 888 2022. All right reserved</div>
+                    <div class="section2-border footer-bottom-border"></div>
+                    <div class="copyright">Copyright © 2024. All rights reserved.</div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Signup Modal  -->
-    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="vector-close">
-                    <button type="button" class="btn btn-closed" data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                </div>
-                <div class="top-content text-center">
-                    <div class="modal-logo"><img src="assets/images/logo.png"></div>
-                    <div class="title">Sign Up Instantly</div>
-                </div>
-                <div class="form-content">
-                    <form action="#">
-                        <input type="email" class="form-control" placeholder="Email" required>
-                        <input type="text" class="form-control" placeholder="Username" required>
-                        <input type="password" class="form-control" placeholder="Password" required>
-                        <div class="form-group dob-field">
-                            <label for="">Date of birth</label>
-                            <div class="row mx-auto w-100">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 ps-0">
-                                    <div class="form-control">
-                                        <div class="title m-0">Date</div>
-                                        <div class="input"><input type="number" placeholder=""></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 px-0">
-                                    <div class="form-control">
-                                        <div class="title m-0">Month</div>
-                                        <div class="input"><input type="number" placeholder=""></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 pe-0">
-                                    <div class="form-control">
-                                        <div class="title m-0">Year</div>
-                                        <div class="input"><input type="number" placeholder=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Referral Code</label>
-                            <input type="text" class="form-control" placeholder="Key in Bonus Code" required>
-                        </div>
-                        <div class="form-button">
-                            <button type="submit" class="btn btn-submit">Sign Up</button>
-                        </div>
-                        <p class="bottom-text">
-                            By signing up I attest that I am at least 18 years old and have read the <a href="#" >Terms and Conditions</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-    <!-- Login Modal  -->
-    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body p-0">
-                  <div class="vector-close">
-                      <button type="button" class="btn btn-closed" data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                  </div>
-                  <div class="top-content text-center">
-                      <div class="modal-logo"><img src="assets/images/logo.png"></div>
-                      <div class="title">Login into CASINO888</div>
-                  </div>
-                  <div class="form-content">
-                      <form action="#">
-                          <input type="email" class="form-control" placeholder="Email" required>
-                          <input type="password" class="form-control" placeholder="Password" required>
-                          <div class="form-button text-center">
-                              <button type="submit" class="btn btn-submit">Login</button>
-                              <a href="#" class="mt-2">Forgot Password</a>
-                          </div>
-                          <p class="bottom-text">
-                              By signing up I attest that I am at least 18 years old and have read the <a href="#" >Terms and Conditions</a>
-                              <br><br> 
-                              You don’t have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#SignUpModal" data-bs-dismiss="modal">Sign Up now</a>
-                          </p>
-                      </form>
-                  </div>
-              </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Provider Modal  -->
-    <div class="modal fade main-color-ffbf00" id="ProviderModal" tabindex="-1" aria-labelledby="ProviderModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body p-0">
-                    <div class="vector-close">
-                        <button type="button" class="btn btn-closed" data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                    </div>
-                    <div class="top-content text-center">
-                        <div class="title text-white">CASINO888 PROVIDERS</div>
-                    </div>
-                    <div class="tab">
-                        <button class="tablinks active" onclick="openTab(this, 'slotsTab')">SLOTS</button>
-                        <button class="tablinks" onclick="openTab(this, 'sportsTab')">SPORTS</button>
-                        <button class="tablinks" onclick="openTab(this, 'casinoTab')">LIVE CASINO</button>
-                        <button class="tablinks" onclick="openTab(this, 'dingdongTab')">DINDONG</button>
-                        <button class="tablinks" onclick="openTab(this, 'arcadeTab')">ARCADE</button>
-                        <button class="tablinks" onclick="openTab(this, 'cockfighterTab')">COCKFIGHTER</button>
-                        <button class="tablinks" onclick="openTab(this, 'ddlotterTab')">DD/LOTTERY</button>
-                    </div>
-                    <div class="tab-contents my-4">
-                        <div id="slotsTab" class="tabcontent show">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="sportsTab" class="tabcontent">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="casinoTab" class="tabcontent">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dingdongTab" class="tabcontent">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="arcadeTab" class="tabcontent">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="cockfighterTab" class="tabcontent">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="ddlotterTab" class="tabcontent">
-                            <div class="images-content">
-                                <div class="row w-100 mx-auto">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/1.png" class="mw-100"></div>
-                                            <div class="img-title">PLAYTEXH</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/7.png" class="mw-100"></div>
-                                            <div class="img-title">918KAYA</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/3.png" class="mw-100"></div>
-                                            <div class="img-title">PRAGMATIC PLAY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/4.png" class="mw-100"></div>
-                                            <div class="img-title">ASIA GAMING</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/5.png" class="mw-100"></div>
-                                            <div class="img-title">SCR 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/6.png" class="mw-100"></div>
-                                            <div class="img-title">CASINO</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/9.png" class="mw-100"></div>
-                                            <div class="img-title">MEGA 888</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                                        <div class="img-card">
-                                            <div class="img mb-3"><img src="assets/images/provider/8.png" class="mw-100"></div>
-                                            <div class="img-title">HABANERO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination-section">
-                                    <div class="prev"> <i class="fas fa-chevron-left"></i> Prev</div>
-                                    <div class="pages-index active">1</div>
-                                    <div class="pages-index d-inline-flex">2</div>
-                                    <div class="next"> Next <i class="fas fa-chevron-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Jquery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- owlcarousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/615d56bdbe.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
