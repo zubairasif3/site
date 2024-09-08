@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../imgs/BG.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0A1524;
+    font-family: "Inter", sans-serif;
+}
+.font-vietnam {
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+.font-league {
+    font-family: "League Spartan", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #0A1524;
+}
+.header {
+    padding: 10px 0px;
+}
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-content .logo-img {
+    width: 148px;
+}
+.navbar-content .menus {
+    display: flex;
+    gap: 12px;
+}
+.navbar-content .menus .menu a {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.navbar-content .menus .dot {
+    color: #2F6ECE;
+    font-size: 22px;
+}
+.navbar-content .menus .menu a.active::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(#2F6FCE,#63BDCC);
+}
+
+.hero-section {
+    position: relative;
+}
+.hero-section .heading{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 5px;
+}
+.hero-section .text{
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+.btn {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+.btn-main {
+    background-color: #46CDCF;
+    border: 1px solid #46CDCF;
+    color: #111456;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 40px;
+    transition: 0.3s all;
+}
+.btn-main:hover,
+.btn-main.btn-outline {
+    background-color: transparent;
+}
+.btn-main.btn-outline:hover {
+    background-color: #46CDCF;
+}
+.scroll-down {
+    text-align: center;
+}
+
+.video-section .main-video {
+    min-height: 300px;
+    background: linear-gradient(to right, #56AACD 0%, #2F70CE 40%, #63BDCC 80%, #46CDCF 100% );
+    position: relative;
+}
+.video-section .main-video video {
+    width: 100%;
+    height: 100%;
+}
+.video-section .main-video .play-button {
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.video-section .main-video .play-button .btn-play{
+    background-color: #fff;
+    border: 1px solid #46CDCF;
+    color: #46CDCF;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 40px;
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    transition: 0.3s all;
+}
+.video-section .main-video .play-button .btn-play:hover{
+    background-color: #46CDCF;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.cards-section .icon-card {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+.cards-section .icon-card .card-content {
+    max-width: 420px;
+}
+.cards-section .icon-card .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+.cards-section .icon-card .text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0A1524;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-content .logo-img {
+        width: 90px;
+    }
+    .navbar-content .menus {
+        gap: 8px;
+    }
+    .navbar-content .menus .menu a {
+        font-size: 16px;
+    }
+    .hero-section  {
+        text-align: center;
+    }
+    .hero-section .heading {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .m-fd-cr {
+        flex-direction: column-reverse;
+    }
+    .cards-section .icon-card {
+        gap: 12px;
+    }
+    .cards-section .icon-card .icon img {
+        width: 40px;
+    }
+    .cards-section .icon-card .title {
+        font-size: 20px;
+    }
+    .cards-section .icon-card .text {
+        font-size: 14px;
+    }
+    .footer {
+        height: 65px;
+        text-align: center;
+    }
+}
