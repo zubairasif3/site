@@ -93,3 +93,10 @@ button {
 a {
   color: var(--clr-maroon);
 }
+
+@media screen and (max-width: 600px) { 
+  main {
+    scroll-snap-type: none;
+    overflow-y: auto;
+  }
+}

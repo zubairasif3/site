@@ -279,6 +279,19 @@
     font-size: var(--size-xs);
     padding-bottom: 3rem;
   }
+  .reps__header-wrapper {
+    width: 100vw;
+  }
+  .reps__column-wrapper {
+    width: 100vw;
+    display: block;
+  }
+  .reps__column {
+    width: 100%;
+  }
+  .section#reps {
+    padding-bottom: calc(10vh + 20px);
+  }
 }
 
 /* xs */

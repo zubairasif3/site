@@ -153,3 +153,57 @@
 .header__line {
   color: var(--clr-light-orange);
 }
+
+@media screen and (max-width: 520px) {
+  .header__main{
+    width: 100vw;
+    padding: 20px;
+    left: 0px;
+    transform: none;
+    box-sizing: border-box;
+  }
+  .logo-image,
+  .menu-button {
+    margin: 0px;
+  }
+  /* Hide the nav menu by default on mobile */
+  #nav-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it's above other elements */
+    padding: 1rem;
+  }
+
+  /* Show the menu when active */
+  #nav-menu.active {
+    display: flex;
+    flex-direction: column; /* Vertical layout for links */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  /* Make links look good on mobile */
+  .header__menu {
+    position: absolute;
+    top: 100%;
+    left: 125px;
+    flex-direction: column; /* Stack links vertically */
+    gap: 1.5em; /* Add space between items */
+    width: 100%;
+  }
+
+  .header__link {
+    font-size: 1.2em; /* Slightly increase font size for readability */
+    padding: 0.5em 0; /* Add padding to links */
+    width: 100%; /* Make them full width */
+    text-align: left; /* Align text to the left */
+  }
+
+  /* Hide the divider lines on mobile */
+  .header__line {
+    display: none;
+  }
+}
+

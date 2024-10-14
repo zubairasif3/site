@@ -192,3 +192,16 @@ mux-player {
   width: 100%;
   height: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .margin-top {
+    margin-top: 160px;
+  }
+  .scroll-indicators {
+    display: none;
+  }
+  .section {
+    min-height: 100vh;
+    height: auto;
+  }
+}
