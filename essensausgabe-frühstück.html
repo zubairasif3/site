@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Factor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+                <img src="assets/images/dashboard-logo.png" alt="Logo" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zimmerverwaltung.html">Zimmerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bewohnerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benutzerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="einlasskontrolle.html">Einlasskontrolle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="essensausgabe.html">Essensausgabe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="export.html">Export</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="vorname-nachname.html" class="nav-link">Vorname Nachname</a>
+                </span>
+            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="zimmerver-heading">Einlasskontrolle</div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 text-center">
+                <div class="profile-img">
+                    <img src="assets/images/person.PNG" alt="Avatar" class="mb-2">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12 col-12">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Vorname</label>
+                            <input type="text" class="form-control" value="Max">
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Nachname</label>
+                            <input type="text" class="form-control" value="Mustermann">
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Geschlecht</label>
+                            <input type="text" class="form-control" value="Männlich">
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Geburtsdatum</label>
+                            <input type="text" class="form-control" value="01.01.1990">
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Herkunftsland</label>
+                            <input type="text" class="form-control" value="Syrien">
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Asylstatus</label>
+                            <input type="text" class="form-control" value="Status">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Freitextfeld</label>
+                        <textarea class="form-control" rows="3">Hier stehen Informationen zum Bewohner</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12 col-12">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <div class="nfc-img text-center">
+                        <a href="javascript:void(0);" onclick="toggleMessage()">
+                            <img src="assets/images/nfc.png" alt="NFC">
+                        </a>
+                    </div>
+                    <div class="two-factor-para">Karte an den Scanner halten...</div>
+                  </div>
+            </div>
+        </div>
+        <div class="text-end my-5">
+            <button class="btn neues-btn">Abbrechen</button>
+        </div>
+    </div>
+    <div id="successMessage" class="success-message mt-4">
+        <span>Essensausgabe Erfolgreich</span>
+        <div class="icon">✔</div>
+    </div>
+    <style>
+        .form-control{
+            background-color: #f5f5f5 !important;
+        }
+        .two-factor-para{
+            font-size: 28px;
+        }
+    </style>
+    <script>
+        function toggleMessage() {
+    const message = document.getElementById("successMessage");
+    if (message.style.display === "none" || message.style.display === "") {
+        message.style.display = "flex";
+    } else {
+        message.style.display = "none";
+    }
+}
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

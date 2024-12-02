@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratus</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+                <img src="assets/images/dashboard-logo.png" alt="Logo" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zimmerverwaltung.html">Zimmerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bewohnerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benutzerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="einlasskontrolle.html">Einlasskontrolle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="essensausgabe.html">Essensausgabe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="export.html">Export</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="#" class="nav-link">Vorname Nachname</a>
+                </span>
+            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="zimmerver-heading">Benutzerverwaltung</div>
+      <button class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#userModal">Neues Zimmer anlegen</button>
+       <div class="table-responsive mt-3">
+        <table class="table  table-striped table-border-bottom">
+          <thead class=""   >
+              <tr class="table-border-bottom">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Benutzername</th>
+                    <th>Aktionen</th>
+                </tr>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max Mustermann</td>
+                <td>Beispiel-User</td>
+                <td><a href="#" class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#benutzerverwaltungModal">Bearbeiten</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maxine Mustermann</td>
+                <td>Beispiel-User</td>
+                <td><a href="#" class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#benutzerverwaltungModal">Bearbeiten</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Max Mustermann</td>
+                <td>Beispiel-User</td>
+                <td><a href="#" class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#benutzerverwaltungModal">Bearbeiten</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Maxine Mustermann</td>
+                <td>Beispiel-User</td>
+                <td><a href="#" class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#benutzerverwaltungModal">Bearbeiten</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Maximilian Mustermann</td>
+                <td>Beispiel-User</td>
+                <td><a href="#" class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#benutzerverwaltungModal">Bearbeiten</a></td>
+            </tr>
+          </tbody>
+      </table>
+       </div>
+       <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Zurück</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Nächstes</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="editModalLabel">Zimmer verwalten</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-border-bottom">
+                        <thead class="table-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Bewohner Name</th>
+                                <th>Geschlecht</th>
+                                <th>Herkunft</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Max Mustermann</td>
+                                <td>Männlich</td>
+                                <td>Deutschland</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Maxine Mustermann</td>
+                                <td>Weiblich</td>
+                                <td>Syrien</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Maximilian Mustermann</td>
+                                <td>Männlich</td>
+                                <td>Deutschland</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Maximilian Mustermann</td>
+                                <td>Männlich</td>
+                                <td>Deutschland</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                  <form class="mt-4">
+                      <div class="row g-3">
+                          <div class="col-md-6">
+                              <label for="zimmerName" class="form-label">Zimmername</label>
+                              <input type="text" class="form-control" id="zimmerName" placeholder="Text eingeben...">
+                          </div>
+                          <div class="col-md-6">
+                              <label for="maxCapacity" class="form-label">Maximale Bewohneranzahl</label>
+                              <input type="number" class="form-control" id="maxCapacity" value="4">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn neues-btn" >Abbrechen</button>
+                  <button type="button" class="btn neues-btn" data-bs-dismiss="modal">Speichern</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog benutzerverwaltung modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="userModalLabel">Benutzer anlegen</h5>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="vorname" class="form-label">Vorname</label>
+                    <input type="text" class="form-control" id="vorname" placeholder="Text eingeben...">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="nachname" class="form-label">Nachname</label>
+                    <input type="text" class="form-control" id="nachname" placeholder="Text eingeben...">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="benutzername" class="form-label">Benutzername</label>
+                    <input type="text" class="form-control" id="benutzername" placeholder="Text eingeben...">
+                  </div>
+                </div>
+                <label class="form-label">Berechtigung auswählen</label>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="verwaltung">
+                      <label class="form-check-label" for="verwaltung">Verwaltung</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="sicherheit" checked>
+                      <label class="form-check-label" for="sicherheit">Sicherheit</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="catering">
+                      <label class="form-check-label" for="catering">Catering</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="administrator">
+                      <label class="form-check-label" for="administrator">Administrator</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="initialPassword" class="form-label">Initialpasswort</label>
+                    <input type="text" class="form-control" id="initialPassword" value="Passwort2024" readonly>
+                  </div>
+                </div>
+                <div>
+                    <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#identificationModal">Karte verknüpfen</button>
+                    <button type="button" class="btn neues-btn">Passwort zurücksetzen</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn">Abbrechen</button>
+              <button type="button" class="btn neues-btn"  data-bs-dismiss="modal">Speichern</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="identificationModal" tabindex="-1" aria-labelledby="identificationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="two-factor-heading">Bewohnerkarte Scannen</div>
+                <div class="nfc-img text-center">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#bearbeiten">
+                        <img src="assets/images/nfc.png" alt="NFC Image" />
+                    </a>
+                </div>
+                <div class="two-factor-para">Karte an den Scanner halten...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="benutzerverwaltungModal" tabindex="-1" aria-labelledby="benutzerverwaltungModal" aria-hidden="true">
+        <div class="modal-dialog benutzerverwaltung modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="userModalLabel">Benutzer anlegen</h5>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="vorname" class="form-label">Vorname</label>
+                    <input type="text" class="form-control" id="vorname" placeholder="Text eingeben...">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="nachname" class="form-label">Nachname</label>
+                    <input type="text" class="form-control" id="nachname" placeholder="Text eingeben...">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="benutzername" class="form-label">Benutzername</label>
+                    <input type="text" class="form-control" id="benutzername" placeholder="Text eingeben...">
+                  </div>
+                </div>
+                <label class="form-label">Berechtigung auswählen</label>
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="verwaltung">
+                      <label class="form-check-label" for="verwaltung">Verwaltung</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="sicherheit" checked>
+                      <label class="form-check-label" for="sicherheit">Sicherheit</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="catering">
+                      <label class="form-check-label" for="catering">Catering</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="administrator">
+                      <label class="form-check-label" for="administrator">Administrator</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="initialPassword" class="form-label">Initialpasswort</label>
+                    <input type="text" class="form-control" id="initialPassword" value="Passwort2024" readonly>
+                  </div>
+                </div>
+                <div>
+                    <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#identificationModal">Karte verknüpfen</button>
+                    <button type="button" class="btn neues-btn">Passwort zurücksetzen</button>
+                    <button type="button" class="btn neues-btn">Benutzer loschen</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn">Abbrechen</button>
+              <button type="button" class="btn neues-btn"  data-bs-dismiss="modal">Speichern</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

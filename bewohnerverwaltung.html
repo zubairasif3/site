@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+                <img src="assets/images/dashboard-logo.png" alt="Logo" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zimmerverwaltung.html">Zimmerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bewohnerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benutzerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="einlasskontrolle.html">Einlasskontrolle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="essensausgabe.html">Essensausgabe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="export.html">Export</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="dashboard.html" class="nav-link">Vorname Nachname</a>
+                </span>
+            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="zimmerver-heading">Bewohnerverwaltung</div>
+      <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#residentModal">Neues Zimmer anlegen</button>    
+      <button class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#identificationModal">Bewohner identifizieren</button>
+       <div class="table-responsive mt-3">
+        <table class="table table-striped table-border-bottom">
+          <thead>
+              <tr class="table-border-bottom">
+                <tr>
+                    <th>ID</th>
+                    <th>Bewohner Name</th>
+                    <th>Geschlecht</th>
+                    <th>Herkunft</th>
+                    <th>Anwesend</th>
+                    <th>Aktion</th>
+                </tr>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max Mustermann</td>
+                <td>Männlich</td>
+                <td>Deutschland</td>
+                <td>Nein</td>
+                <td>
+                    <button class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#bearbeiten">Bearbeiten</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maxine Mustermann</td>
+                <td>Weiblich</td>
+                <td>Syrien</td>
+                <td>Nein</td>
+                <td>
+                    <button class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#bearbeiten">Bearbeiten</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Maximilian Mustermann</td>
+                <td>Männlich</td>
+                <td>Deutschland</td>
+                <td>Nein</td>
+                <td>
+                    <button class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#bearbeiten">Bearbeiten</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Maxine Mustermann</td>
+                <td>Weiblich</td>
+                <td>Syrien</td>
+                <td>Ja</td>
+                <td>
+                    <button class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#bearbeiten">Bearbeiten</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max Mustermann</td>
+                <td>Männlich</td>
+                <td>Deutschland</td>
+                <td>Ja</td>
+                <td>
+                    <button class="btn neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#bearbeiten">Bearbeiten</button>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+       <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Zurück</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Nächstes</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Modals -->
+    <div class="modal fade" id="identificationModal" tabindex="-1" aria-labelledby="identificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <div class="two-factor-heading">Bewohnerkarte Scannen</div>
+            <div class="nfc-img text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#bearbeiten">
+                    <img src="assets/images/nfc.png" alt="NFC Image" />
+                </a>
+            </div>
+            <div class="two-factor-para">Karte an den Scanner halten...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Zimmer verwalten</h5>
+                </div>
+                <div class="modal-body">
+                  <div class="table-responsive">
+                      <table class="table table-striped table-border-bottom">
+                          <thead class="table-light">
+                              <tr>
+                                  <th>ID</th>
+                                  <th>Bewohner Name</th>
+                                  <th>Geschlecht</th>
+                                  <th>Herkunft</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>Max Mustermann</td>
+                                  <td>Männlich</td>
+                                  <td>Deutschland</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Maxine Mustermann</td>
+                                  <td>Weiblich</td>
+                                  <td>Syrien</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>Maximilian Mustermann</td>
+                                  <td>Männlich</td>
+                                  <td>Deutschland</td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td>Maximilian Mustermann</td>
+                                  <td>Männlich</td>
+                                  <td>Deutschland</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                    <form class="mt-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="zimmerName" class="form-label">Zimmername</label>
+                                <input type="text" class="form-control" id="zimmerName" placeholder="Text eingeben...">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="maxCapacity" class="form-label">Maximale Bewohneranzahl</label>
+                                <input type="number" class="form-control" id="maxCapacity" value="4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn neues-btn">Abbrechen</button>
+                    <button type="button" class="btn neues-btn" data-bs-dismiss="modal">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="residentModal" tabindex="-1" aria-labelledby="residentModalLabel" aria-hidden="true">
+        <div class="modal-dialog new-modal modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="residentModalLabel">Bewohner anlegen</h5>
+            </div>
+            <div class="modal-body pb-0">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-3 text-center">
+                    <img src="assets/images/person.PNG" alt="Avatar" class="mb-2">
+                    <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#webCam">Webcam Foto</button>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <label for="firstname" class="form-label">Vorname</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Text eingeben...">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="lastname" class="form-label">Nachname</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Text eingeben...">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="country" class="form-label">Herkunftsland</label>
+                        <input type="text" class="form-control" id="country" placeholder="Text eingeben...">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="birthdate" class="form-label">Geburtsdatum</label>
+                        <input type="date" class="form-control" id="birthdate">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="gender" class="form-label">Geschlecht</label>
+                        <select class="form-select" id="gender">
+                          <option selected>Geschlecht auswählen...</option>
+                          <option value="male">Männlich</option>
+                          <option value="female">Weiblich</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="status" class="form-label">Asylstatus</label>
+                        <select class="form-select" id="status">
+                          <option selected>Status auswählen...</option>
+                          <option value="approved">Genehmigt</option>
+                          <option value="pending">Ausstehend</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="problematic" class="form-label">Problematischer Bewohner</label>
+                        <select class="form-select" id="problematic">
+                          <option selected>Auswählen...</option>
+                          <option value="yes">Ja</option>
+                          <option value="no">Nein</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="marital" class="form-label">Familienstand</label>
+                        <select class="form-select" id="marital">
+                          <option selected>Familienstand auswählen...</option>
+                          <option value="single">Ledig</option>
+                          <option value="married">Verheiratet</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="entryDate" class="form-label">Einzugsdatum</label>
+                        <input type="date" class="form-control" id="entryDate">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="notes" class="form-label">Freitextfeld</label>
+                        <textarea class="form-control" id="notes" rows="3" placeholder="Text eingeben..."></textarea>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center btn-group-flex">
+                        <div class="btn-group">
+                          <button type="button" class="btn neues-btn me-2" data-bs-toggle="modal" data-bs-target="#angehoerigeModal">Angehörige verwalten</button>
+                          <button type="button" class="btn neues-btn me-2"  data-bs-toggle="modal" data-bs-target="#zimmerVerwalten">Zimmer verwalten</button>
+                          <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#identificationModal">Karte verknüpfen</button>
+                        </div>
+                        <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#notesModal">Anmerkungen</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn">Abbrechen</button>
+              <button type="button" class="btn neues-btn" data-bs-dismiss="modal">Speichern</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bearbeiten" tabindex="-1" aria-labelledby="bearbeiten" aria-hidden="true">
+        <div class="modal-dialog new-modal modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="residentModalLabel">Bewohner bearbeiten</h5>
+            </div>
+            <div class="modal-body pb-0">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-3 text-center">
+                    <img src="assets/images/person.PNG" alt="Avatar" class="mb-2">
+                    <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#webCam">Webcam Foto</button>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <label for="firstname" class="form-label">Vorname</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Text eingeben...">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="lastname" class="form-label">Nachname</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Text eingeben...">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="country" class="form-label">Herkunftsland</label>
+                        <input type="text" class="form-control" id="country" placeholder="Text eingeben...">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="birthdate" class="form-label">Geburtsdatum</label>
+                        <input type="date" class="form-control" id="birthdate">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="gender" class="form-label">Geschlecht</label>
+                        <select class="form-select" id="gender">
+                          <option selected>Geschlecht auswählen...</option>
+                          <option value="male">Männlich</option>
+                          <option value="female">Weiblich</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="status" class="form-label">Asylstatus</label>
+                        <select class="form-select" id="status">
+                          <option selected>Status auswählen...</option>
+                          <option value="approved">Genehmigt</option>
+                          <option value="pending">Ausstehend</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="problematic" class="form-label">Problematischer Bewohner</label>
+                        <select class="form-select" id="problematic">
+                          <option selected>Auswählen...</option>
+                          <option value="yes">Ja</option>
+                          <option value="no">Nein</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="marital" class="form-label">Familienstand</label>
+                        <select class="form-select" id="marital">
+                          <option selected>Familienstand auswählen...</option>
+                          <option value="single">Ledig</option>
+                          <option value="married">Verheiratet</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="entryDate" class="form-label">Einzugsdatum</label>
+                        <input type="date" class="form-control" id="entryDate">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="notes" class="form-label">Freitextfeld</label>
+                        <textarea class="form-control" id="notes" rows="3" placeholder="Text eingeben..."></textarea>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center btn-group-flex">
+                        <div class="btn-group">
+                          <button type="button" class="btn neues-btn me-2" data-bs-toggle="modal" data-bs-target="#angehoerigeModal">Angehörige verwalten</button>
+                          <button type="button" class="btn neues-btn me-2"  data-bs-toggle="modal" data-bs-target="#zimmerVerwalten">Zimmer verwalten</button>
+                          <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#identificationModal">Karte verknüpfen</button>
+                        </div>
+                        <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#notesModal">Anmerkungen</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn">Bewohner loschen</button>
+              <button type="button" class="btn neues-btn">Abbrechen</button>
+              <button type="button" class="btn neues-btn" data-bs-dismiss="modal">Speichern</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="webCam" tabindex="-1" aria-labelledby="webCam" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Zimmer verwalten</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-border-bottom">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Bewohner Name</th>
+                                    <th>Geschlecht</th>
+                                    <th>Herkunft</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Max Mustermann</td>
+                                    <td>Männlich</td>
+                                    <td>Deutschland</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Maxine Mustermann</td>
+                                    <td>Weiblich</td>
+                                    <td>Syrien</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Maximilian Mustermann</td>
+                                    <td>Männlich</td>
+                                    <td>Deutschland</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Maximilian Mustermann</td>
+                                    <td>Männlich</td>
+                                    <td>Deutschland</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form >
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="zimmerName" class="form-label">Zimmername</label>
+                                <input type="text" class="form-control" id="zimmerName" placeholder="Text eingeben...">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="maxCapacity" class="form-label">Maximale Bewohneranzahl</label>
+                                <input type="number" class="form-control" id="maxCapacity" value="4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn neues-btn">Abbrechen</button>
+                    <button type="button" class="btn neues-btn" data-bs-dismiss="modal">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="modal fade" id="zimmerVerwalten" tabindex="-1" aria-labelledby="zimmerVerwalten" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Zimmer zurordnen</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-5 mt-0">
+                        <select class="form-select" id="problematic">
+                          <option selected>Zimmer 4</option>
+                          <option value="Zimmer3">Zimmer 3</option>
+                          <option value="Zimmer2">Zimmer 2</option>
+                        </select>
+                    </div>
+                    <label for="problematic" class="form-label">Problematischer Bewohner</label>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-border-bottom">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Bewohner Name</th>
+                                    <th>Geschlecht</th>
+                                    <th>Herkunft</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Max Mustermann</td>
+                                    <td>Männlich</td>
+                                    <td>Deutschland</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Maxine Mustermann</td>
+                                    <td>Weiblich</td>
+                                    <td>Syrien</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Maximilian Mustermann</td>
+                                    <td>Männlich</td>
+                                    <td>Deutschland</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Maximilian Mustermann</td>
+                                    <td>Männlich</td>
+                                    <td>Deutschland</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn neues-btn">Abbrechen</button>
+                    <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#bearbeiten">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="angehoerigeModal" tabindex="-1" aria-labelledby="angehoerigeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="angehoerigeModalLabel">Angehörige verwalten</h5>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6>Aktuelle Angehörige</h6>
+                  <div class="table-responsive">
+                    <table class="table table-striped table-border-bottom">
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Max Mustermann</td>
+                            <td><button class="btn neues-btn btn-sm">Entfernen</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Maxine Mustermann</td>
+                            <td><button class="btn neues-btn btn-sm">Entfernen</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="bewohnerZuweisen" class="form-label">Bewohner zuweisen</label>
+                    <select id="bewohnerZuweisen" class="form-select">
+                      <option selected>Bewohner auswählen…</option>
+                      <option>Bewohner 1</option>
+                      <option>Bewohner 2</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="verwandtschaftsstatus" class="form-label">Verwandtschaftsstatus</label>
+                    <textarea id="verwandtschaftsstatus" class="form-control" rows="4" placeholder="Text eingeben…"></textarea>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn  neues-btn btn-sm">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn">Abbrechen</button>
+              <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#bearbeiten">Speichern</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="notesModal" tabindex="-1" aria-labelledby="notesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="notesModalLabel">Bewohner Anmerkungen</h5>
+            </div>
+            <div class="modal-body">
+              <div class="row mb-3">
+                <div class="col-md-3 text-center">
+                  <img src="assets/images/person.PNG" class="rounded-circle" alt="User Image">
+                </div>
+                <div class="col-md-9">
+                  <div class="mb-2">
+                    <strong>Mitarbeiter 1</strong> <span class="text-muted notesModalLabel-date">04.11.2024, 10:34</span>
+                    <p class="notesModalLabel-para">Die ist ein Beispiel Text der von einem Mitarbeiter hinzugefügt worden ist.</p>
+                  </div>
+                  <div>
+                    <strong>Mitarbeiter 2</strong> <span class="text-muted notesModalLabel-date">23.10.2024, 13:46</span>
+                    <p class="notesModalLabel-para">Die ist ein Beispiel Text der von einem Mitarbeiter hinzugefügt worden ist.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#anmerkungHinzufügen">Anmerkung hinzufügen</button>
+              <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#bearbeiten">Zurück</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="anmerkungHinzufügen" tabindex="-1" aria-labelledby="anmerkungHinzufügen" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="anmerkungHinzufügen">Bewohner Anmerkungen</h5>
+            </div>
+            <div class="modal-body">
+              <div class="row mb-3">
+                <div class="col-md-3 text-center">
+                  <img src="assets/images/person.PNG" class="rounded-circle" alt="User Image">
+                </div>
+                <div class="col-md-9">
+                    <div class="mb-3">
+                        <label for="verwandtschaftsstatus" class="form-label">Ammerkung hinzufügen</label>
+                        <textarea id="verwandtschaftsstatus" class="form-control" rows="4" placeholder="Text eingeben…"></textarea>
+                      </div>
+                      <div class="text-end">
+                        <button class="btn  neues-btn btn-sm" data-bs-toggle="modal" data-bs-target="#notesModal">Anmerkung speichern</button>
+                      </div>
+                  <div class="mb-2">
+                    <strong>Mitarbeiter 1</strong> <span class="text-muted notesModalLabel-date">04.11.2024, 10:34</span>
+                    <p class="notesModalLabel-para">Die ist ein Beispiel Text der von einem Mitarbeiter hinzugefügt worden ist.</p>
+                  </div>
+                  <div>
+                    <strong>Mitarbeiter 2</strong> <span class="text-muted notesModalLabel-date">23.10.2024, 13:46</span>
+                    <p class="notesModalLabel-para">Die ist ein Beispiel Text der von einem Mitarbeiter hinzugefügt worden ist.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn neues-btn" data-bs-toggle="modal" data-bs-target="#bearbeiten">Zurück</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

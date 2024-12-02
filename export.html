@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+                <img src="assets/images/dashboard-logo.png" alt="Logo" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zimmerverwaltung.html">Zimmerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bewohnerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benutzerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="einlasskontrolle.html">Einlasskontrolle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="essensausgabe.html">Essensausgabe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="export.html">Export</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="vorname-nachname.html" class="nav-link">Vorname Nachname</a>
+                </span>
+            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="zimmerver-heading">Export</div>
+
+        <div class="export-container">
+            <form>
+                <div class="mb-4">
+                    <label for="fileType" class="form-label">Datei</label>
+                    <select class="form-select" id="fileType">
+                        <option selected>Protokolltyp auswählen...</option>
+                    </select>
+                </div>
+                <div class="export-flex">
+                    <div class="mb-4">
+                        <label class="form-label">Zeitraum</label>
+                        <div class="date-range-inputs ">
+                            <input type="date" class="form-control export-child" id="startDate">
+                        </div>
+                    </div>
+                    <span>-</span>
+                    <input type="date" class="form-control export-child" id="endDate">
+                    <button type="submit" class="btn btn-sm neues-btn">Export</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <style>
+        .form-select{
+            width: 25% !important;
+        }
+    </style>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

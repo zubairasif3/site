@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="login.html">
+                <img src="assets/images/dashboard-logo.png" alt="Logo" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zimmerverwaltung.html">Zimmerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bewohnerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="benutzerverwaltung.html">Bewohnerverwaltung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="einlasskontrolle.html">Einlasskontrolle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="essensausgabe.html">Essensausgabe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="export.html">Export</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="#" class="nav-link">Vorname Nachname</a>
+                </span>
+            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="zimmerver-heading">Dashboard</div>
+        <div class="container dashboard">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="text-center mb-4">
+                        <div class="dashboard-heading">Übersicht</div>
+                    </div>
+                    <div><img src="assets/images/graph.PNG" alt=""></div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center gap-2">
+                            <div class="graph-flex">
+                                <div class="bg-ff446e bg-ff861f"></div> 
+                                <div>Bewohner anwesend</div>
+                            </div>
+                            <div class="graph-flex">
+                                <div class="bg-ff446e"></div> 
+                                <div>Bewohner abwesend</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="dashboard-heading">Abwesende Bewohner</div>
+                    <div class="table-responsive mt-3" style="font-size: 13px;">
+                        <table class="table table-striped table-border-bottom">
+                            <thead>
+                                <tr class="table-border-bottom">
+                                    <th>Bewohner Name</th>
+                                    <th>Zimmer</th>
+                                    <th>Abwesend seit</th>
+                                    <th>Tage abwesend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Max Mustermann</td>
+                                    <td>Zimmer 2</td>
+                                    <td>21.10.2024 - 13:00 Uhr</td>
+                                    <td>6 Tage</td>
+                                </tr>
+                                <tr>
+                                    <td>Maxine Mustermann</td>
+                                    <td>Zimmer 5</td>
+                                    <td>22.10.2024 - 09:00 Uhr</td>
+                                    <td>5 Tage</td>
+                                </tr>
+                                <tr>
+                                    <td>Max Mustermann</td>
+                                    <td>Zimmer 1</td>
+                                    <td>22.10.2024 - 14:00 Uhr</td>
+                                    <td>5 Tage</td>
+                                </tr>
+                                <tr>
+                                    <td>Maxine Mustermann</td>
+                                    <td>Zimmer 6</td>
+                                    <td>22.10.2024 - 16:00 Uhr</td>
+                                    <td>4 Tage</td>
+                                </tr>
+                                <tr>
+                                    <td>Max Mustermann</td>
+                                    <td>Zimmer 1</td>
+                                    <td>22.10.2024 - 14:00 Uhr</td>
+                                    <td>5 Tage</td>
+                                </tr>
+                                <tr>
+                                    <td>Maxine Mustermann</td>
+                                    <td>Zimmer 6</td>
+                                    <td>22.10.2024 - 16:00 Uhr</td>
+                                    <td>4 Tage</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Zurück</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Nächstes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="dashboard-heading">Benachrichtigungen</div>
+                    <div class="notifications">
+                        <div class="notification-item">
+                            Abwesend über 48h<br>
+                            <small>Max Mustermann</small><br>
+                            <div class="text-end date">23.10.2024, 13:46</div>
+                        </div>
+                        <div class="notification-item">
+                            Abwesend über 48h<br>
+                            <small>Max Mustermann</small><br>
+                            <div class="text-end date">23.10.2024, 13:46</div>
+                        </div>
+                        <div class="notification-item">
+                            Abwesend über 48h<br>
+                            <small>Max Mustermann</small><br>
+                            <div class="text-end date">23.10.2024, 13:46</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-content,
+body {
+  background-color:#e2e2e2 !important;
+}
+
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.login-title {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.login-logo{
+  margin: 30px;
+}
+
+.login-btn{
+  display: inline;
+  background-color: #264769;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.login-btn:hover{
+  background-color: #264769;
+  color: #fff;
+}
+
+.two-factor-heading{
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: #202529;
+}
+
+.two-factor-para{
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: #202529;
+}
+
+.nfc-img{
+  margin: 40px 0px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-text,
+.navbar-nav .nav-link {
+  font-size: 14px;
+}
+
+.navbar-text {
+  font-weight: 500;
+}
+
+#navbarNav{
+  justify-content: space-between;
+}
+
+
+table {
+  background-color: #ffffff;
+}
+
+.btn-secondary,
+.btn-primary {
+  border-radius: 0 !important;
+}
+
+.neues-btn{
+  background-color: #fff !important;
+  border-radius: 0px !important;
+  border-color: #bbc1c4 !important;
+  font-size: 14px !important;
+}
+.pagination .page-item .page-link {
+  border-radius: 0;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #27486b !important;
+  box-shadow: none;
+  color: #fff !important;
+}
+
+.page-item:first-child .page-link,
+.page-item:not(:first-child) .page-link{
+  color: #27486b !important;
+  box-shadow: none;
+  border-radius: 0px !important;
+  background-color: #fff ;
+}
+.modal-content {
+  border-radius: 0;
+  padding: 20px;
+  border-radius: 0px !important;
+  border: 1px solid #b8b5b5 !important;
+}
+
+.container{
+  max-width: 1300px !important; 
+}
+
+.zimmerver-heading{
+  font-size: 35px;
+  font-weight: 500;
+  padding: 50px 0px;
+}
+
+.table-border-bottom,
+.table-border-bottom tbody tr:nth-child(2n) {
+  border-bottom: 1px solid #6b7175;
+}
+
+.margin-top{
+  margin-top: 100px;
+}
+
+.essensausgabe-btn{
+  background-color: #fff !important;
+  border-radius: 0px !important;
+  height: 100px !important;
+  width: 100%;
+  border: 1px solid #979fa5 !important;
+  border-color: #979fa5;
+  color: #979fa5 !important;
+  font-size: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.essensausgabe-section{
+  max-width: 70%;
+  margin: auto;
+}
+
+.form-select{
+  width: 25% !important;
+}
+
+.export-flex{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.export-child{
+  width: 318px !important;
+  height: 100%;
+  background-color: #f3f7fe !important;
+}
+
+.password-container {
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.notifications {
+  max-height: 200px; 
+  overflow-y: auto; 
+  padding: 10px;
+  border-radius: 5px; 
+}
+
+.notification-item {
+  background-color: #c4e5ff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #004085;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item small{
+  font-weight: 400;
+}
+
+.notification-item .date{
+  color: #90989e;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.modal-title,
+.dashboard-heading{
+  font-size: 28px;
+  font-weight: 400;
+  color: #323a40;  
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.bg-ff446e{
+  background-color: #ff446e;
+  height: 18px;
+  width: 55px;
+}
+
+.graph-flex{
+  display: flex;
+  gap: 4px;
+  font-size: 13px;
+  color: #808080;  
+}
+
+.bg-ff861f{
+  background-color: #ff861f;
+}
+
+.modal-header{
+  border-bottom: none !important;
+}
+
+.modal-footer{
+  border-top: none !important;
+}
+
+#maxCapacity{
+  width: 70px !important;
+}
+
+.modal-dialog{
+  max-width: 80% !important;
+}
+
+.form-select{
+  width: 100% !important;
+}
+
+.modal-dialog.new-modal{
+  max-width: 80% !important;
+}
+
+.notesModalLabel-para{
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.notesModalLabel-date{
+  font-size: 10px;
+}
+
+.form-check-input{
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.bewohner-einchecken-btn{
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 0px;
+  background-color: #38e956;
+  border: 1px solid #a0a8ac;
+  margin-bottom: 20px;
+}
+
+.bewohner-einchecken-btn:hover{
+  background-color: #38e956;
+  color: #fff;
+}
+
+.bewohner-auschecken-btn:hover,
+.bewohner-auschecken-btn{
+  background-color: #ff3637 !important;
+}
+
+.success-message {
+  display: none ; 
+  background-color: #35e956;
+  color: #fff;
+  padding: 20px;
+  border-radius: 0px;
+  font-weight: bold;
+  width: 60%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.success-message .icon {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  color: #35e956;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 40px;
+}
+@media screen and (max-width:767px) {
+
+  .two-factor-heading{
+    font-size: 30px;
+  }
+
+  .zimmerver-heading{
+    font-size: 28px;
+  }
+
+  .neues-btn{
+    margin-bottom: 10px;
+  }
+
+  .export-flex{
+    flex-wrap: wrap;
+  }
+
+  .form-select{
+    width: 100% !important;
+  }
+
+  .modal-dialog{
+    max-width: 80% !important;
+    margin: auto !important;
+  }
+  .modal-dialog.new-modal {
+    max-width: 90% !important;
+  }
+
+  .modal-content{
+    padding: 0px;
+    margin: 20px 0px;
+  }
+
+  .btn-group-flex{
+    flex-wrap: wrap;
+  }
+
+  .two-factor-para,
+  .two-factor-heading,
+  .modal-title{
+    font-size: 20px;
+  }
+
+  .success-message{
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .success-message .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
